@@ -1,0 +1,18 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #fff;
+
+    section {
+        input {
+            margin-block: 20px;
+        }
+        margin-block: 20px;
+    }
+}
